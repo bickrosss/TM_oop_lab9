@@ -46,7 +46,6 @@ def test_calculate_series_2_accuracy(x: float, eps: float) -> None:
 
 
 def test_control_values_known() -> None:
-
     x1: float = 0.35
     expected1: float = 0.5 * math.log((1 + x1) / (1 - x1))
     assert math.isclose(get_control_value_1(x1), expected1, rel_tol=1e-12)
